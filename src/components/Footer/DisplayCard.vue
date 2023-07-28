@@ -7,8 +7,8 @@
         :max-height="400"
         @row-click="rowClick"
       >
-        <el-table-column prop="event_num" label="事件编号"></el-table-column>
-        <el-table-column prop="name" label="类型"></el-table-column>
+        <el-table-column prop="title" label="新闻标题"></el-table-column>
+        <el-table-column prop="location_name" label="地点"></el-table-column>
         <el-table-column label="操作" fixed="right" v-slot="scope">
           <el-button
             link
@@ -49,16 +49,15 @@ const computedData = computed(() => {
   return props.tableData.map((row) => {
     const {
       geometry,
-      properties: { area, car_num, event_num, name, level, phone },
+      properties: {_id, title, location_name, sentiment_score, topic_index},
     } = row
     return {
       geometry,
-      area,
-      car_num,
-      event_num,
-      name,
-      level,
-      phone,
+      _id,
+      title,
+      location_name,
+      sentiment_score,
+      topic_index,
     }
   })
 })

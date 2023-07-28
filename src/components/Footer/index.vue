@@ -25,7 +25,7 @@
             <i class="iconfont icon-mapquery"></i>
           </button>
         </DrawTool>
-        <p>事故查询</p>
+        <p>舆情查询</p>
       </div>
       <div class="item">
         <!-- <DisplayHeatMap
@@ -75,7 +75,7 @@ function transHangZhou() {
   isShow = false
   emits('toggleCharts', isShow)
   map.flyTo({
-    center: [120.2, 30.25],
+    center: [117, 36.5],
     zoom: 10,
     pitch: 0,
   })
@@ -85,7 +85,7 @@ async function changeVisible() {
   // 添加默认热力图
   visible.value = !visible.value
   map.flyTo({
-    center: [120.2, 30.25],
+    center: [117, 36.5],
     zoom: 10,
     pitch: 0,
   })

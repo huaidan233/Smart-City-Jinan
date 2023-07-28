@@ -13,7 +13,7 @@ import { angle } from '@turf/turf'
 
 // base:对比度
 export default async (name, type, size, shape, coverage, colorList) => {
-  const csvData = await getCsv()
+    const csvData = await getCsv();
   const csvHeatMap = new HeatmapLayer({
     name: name,
   })
@@ -21,14 +21,14 @@ export default async (name, type, size, shape, coverage, colorList) => {
       // 数据属性映射
       parser: {
         type: 'csv',
-        x: 'lng',
-        y: 'lat',
+          x: 'longitude',
+          y: 'latitude',
       },
       transforms: [
         {
           type: type, //grid网格和hexagon蜂窝
           size: size,
-          field: 'times',
+            field: 'sentiment_score',
           method: 'sum',
         },
       ],

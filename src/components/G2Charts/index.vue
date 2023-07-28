@@ -7,7 +7,7 @@
         <ColumnChart v-bind="lt_config" :data="lt_data" />
       </div>
       <div class="g2-chart">
-        <div class="title">杭州市4A、5A级风景区数统计</div>
+        <div class="title">济南市4A、5A级风景区数统计</div>
         <!-- 玫瑰图 -->
         <!-- <RoseChart v-bind="lb_config" :data="lb_data" /> -->
         <RoseChart></RoseChart>
@@ -15,7 +15,7 @@
     </div>
     <div class="right-container">
       <div class="g2-chart">
-        <div class="title">杭州市客运量指数</div>
+        <div class="title">济南市客运量指数</div>
         <!-- 饼状图 -->
         <!-- <PieChart v-bind="rt_config" /> -->
         <PieChart></PieChart>

@@ -1,4 +1,4 @@
-# “智慧杭州”大屏管理系统
+# “智慧济南”大屏管理系统
 <div align="center">
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Weltra/Smart-City?style=for-the-badge">
 <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/Weltra/Smart-City?style=for-the-badge">
@@ -26,7 +26,7 @@
 ## 🚀 项目使用
 ### 拉取项目
 ```sh
-git clone https://github.com/shaojintian/Best_README_template.git
+git clone https://github.com/Weltra/Smart-City.git
 ```
 ### Node.js包安装
 #### 前端部分

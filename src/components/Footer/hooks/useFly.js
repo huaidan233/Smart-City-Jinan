@@ -13,13 +13,13 @@ export default () => {
     isCenter.value = !isCenter.value
     if (isCenter.value) {
       map.flyTo({
-        center: [120.2, 30.25],
+          center: [117, 36.5],
         zoom: 12,
         pitch: 80,
       })
     } else {
       map.flyTo({
-        center: [120.2, 30.25],
+          center: [117, 36.5],
         zoom: 2,
         pitch: 0,
       })

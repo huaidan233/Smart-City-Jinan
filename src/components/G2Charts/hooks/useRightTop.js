@@ -1,8 +1,8 @@
 export const useRightTop = () => {
   const data = [
-    { type: '武昌', value: 27 },
-    { type: '汉口', value: 25 },
-    { type: '汉阳', value: 18 },
+      {type: '历下', value: 27},
+      {type: '槐荫', value: 25},
+      {type: '市中', value: 18},
     { type: '其他', value: 18 },
   ]
   const config = {

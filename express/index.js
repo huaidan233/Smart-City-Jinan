@@ -29,6 +29,6 @@ app.use('', router)
 app.use(express.static('public'))
 
 // 监听请求事件
-app.listen(80, () => {
+app.listen(6868, () => {
   console.log('express running at http://127.0.0.1')
 })

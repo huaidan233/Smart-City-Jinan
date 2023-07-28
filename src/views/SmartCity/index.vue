@@ -10,6 +10,9 @@
 import { inject, onMounted } from 'vue'
 import useBuildings from './hooks/useBuildings'
 import useRoads from './hooks/useRoads'
+import usePoints from './hooks/usePoints'
+import {Scene, PointLayer} from '@antv/l7';
+import {GaodeMap} from '@antv/l7-maps';
 import MapControls from '@/components/MapControls.vue'
 import Header from '@/components/Header.vue'
 import G2Charts from '@/components/G2Charts/index.vue'
@@ -31,6 +34,10 @@ onMounted(async () => {
 
   const roads_layer = await useRoads()
   scene.addLayer(roads_layer)
+
+  const PointLayer = await usePoints(scene)
+  scene.addLayer(PointLayer)
+
 })
 </script>
 

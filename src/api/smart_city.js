@@ -10,21 +10,26 @@ export const getCityBuildings = () => {
 
 export const getRoads = () => {
   return request({
-    url: '/json/Hangzhou_roads.json',
+      url: '/json/Jinan_road.geojson',
     method: 'GET',
   })
 }
 
 export const getEvents = () => {
   return request({
-    url: '/json/Hangzhou_events.json',
+      url: '/json/data.geojson',
+      method: 'GET',
+  })
+}
+export const getPoints = () => {
+    return request({
+        url: '/json/data.geojson',
     method: 'GET',
   })
 }
-
 export const getCsv = () => {
   return request({
-    url: '/csv/locs.csv',
+      url: '/csv/news.csv',
     method: 'GET',
   })
 }

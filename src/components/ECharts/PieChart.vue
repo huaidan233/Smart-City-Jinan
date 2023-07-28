@@ -23,7 +23,7 @@ const option = ref({
   legend: {
     orient: 'vertical',
     left: 'left',
-    data: ['杭州东站', '杭州南站', '杭州站', '余杭站', '其他'],
+    data: ['济南站', '济南东站', '济南北站', '遥墙机场', '其他'],
   },
   series: [
     {
@@ -53,10 +53,10 @@ const option = ref({
         show: false,
       },
       data: [
-        { name: '杭州东站', value: 65 },
-        { name: '杭州南站', value: 20 },
-        { name: '杭州站', value: 12 },
-        { name: '余杭站', value: 8 },
+        {name: '济南站', value: 65},
+        {name: '济南东站', value: 20},
+        {name: '济南北站', value: 12},
+        {name: '遥墙机场', value: 8},
         { name: '其他', value: 3 },
       ],
     },

@@ -20,7 +20,7 @@ export default {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/dark-v11',
-      center: [114.3, 30.5],
+        center: [117.0, 36.5],
       zoom: 2,
       projection: 'globe',
     })

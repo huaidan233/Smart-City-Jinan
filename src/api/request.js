@@ -3,7 +3,7 @@ import axios from 'axios'
 
 // 创建axios实例
 const instance = axios.create({
-  baseURL: 'http://localhost:80',
+    baseURL: 'http://api.badeggs.top',
   // timeout: 20000,
 })
 

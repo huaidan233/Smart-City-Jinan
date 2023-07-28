@@ -13,7 +13,7 @@ export default async (name, type, colors, size) => {
     .source(heatData)
     .shape(type)
     // 不限制属性类型，均可传入
-    .size('times', [0, size]) // weight映射通道
+      .size('sentiment_score', [0, size]) // weight映射通道
     .style({
       intensity: 2,
       radius: 20,

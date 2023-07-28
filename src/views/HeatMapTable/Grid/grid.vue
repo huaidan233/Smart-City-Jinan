@@ -149,7 +149,7 @@ onMounted(async () => {
   // 加载默认图层
   scene.addLayer(Layer)
   map.flyTo({
-    center: [118.7, 30.25],
+    center: [117, 36.5],
     zoom: 7,
     pitch: 0,
   })

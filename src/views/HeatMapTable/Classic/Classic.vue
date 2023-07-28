@@ -118,14 +118,15 @@ watch(fromData, async (newValue, oldValue) => {
   let oldLayer = scene.getLayerByName('heatmap')
   oldLayer && scene.removeLayer(oldLayer)
   if (newValue.type === 'heatmap3D') {
+    //TODO
     map.flyTo({
-      center: [120.0, 30.25],
+      center: [117, 36.5],
       zoom: 8.5,
       pitch: 60,
     })
   } else {
     map.flyTo({
-      center: [120.0, 30.25],
+      center: [117, 36.5],
       zoom: 8.5,
       pitch: 0,
     })
